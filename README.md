@@ -25,4 +25,11 @@ VAR은 일변량 자기회귀모형을 다변량 자기회귀모형으로 확정
 연속 혈압을 추정하기 위한 TLFN((Time-Lagged Feed-forward Network)을 이용한다.  
 TLFN은 n-k 시점부터 n 시점까지의 시계열 데이터를 입력 값으로 사용하고, 역전파 알고리즘을 사용하여 가중치를 학습하고, n+1시점의 데이터를 예측하는 알고리즘이다.  
 
+## Analysis Method & Evaluation Index
+- Analysis Method  
+학습 데이터에 사용되는 하나의 샘플은 과거 5000 개의 데이터를 이용하여 향후 100개를 예측하도록 구성했으며, 100개씩 옮겨가면서 샘플을 구성하였다.  
+
+- Evaluation Index  
+예측 오차를 보는 방법에는 주로 Mean Average Percentage Error(MAPE), Mean Average Error(MAE), Mean Percentage Error(MPE), Root Mean Square Error(RMSE)가 있는데 본 연구에서는 MAPE를 이용하였다.
+
 ## Conclusion
